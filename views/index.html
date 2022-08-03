@@ -1,60 +1,302 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Dine Website Challenge</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Frontend Mentor | Dine Website Challenge</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="section section--hero">
+        <picture>
+          <source
+            media="(min-width: 900px)"
+            srcset="/images/homepage/hero-bg-tablet.jpg"
+          />
+          <source
+            media="(min-width: 375px)"
+            srcset="/images/homepage/hero-bg-tablet.jpg"
+          />
+          <img
+            class="hero-img"
+            src="/images/homepage/hero-bg-mobile.jpg"
+            alt="mobile"
+          />
+        </picture>
 
-  Exquisite dining since 1989
+        <div class="section__content">
+          <img class="hero__logo" src="/images/logo.svg" alt="dine" />
+          <h1 class="heading--XL hero__heading">Exquisite dining since 1989</h1>
+          <p class="body--1 hero__body">
+            Experience our seasonal menu in beautiful country surroundings. Eat
+            the freshest produce from the comfort of our farmhouse. Book a table
+          </p>
+          <button class="btn btn--dark" type="button">book a table</button>
+        </div>
+      </section>
+      <section class="section section--family">
+        <div class="section__content">
+          <picture>
+            <source
+              media="(min-width: 900px)"
+              srcset="/images/homepage/enjoyable-place-desktop.jpg"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="/images/homepage/enjoyable-place-tablet.jpg"
+            />
+            <img
+              class="section--family__img box-shadow"
+              src="/images/homepage/enjoyable-place-mobile.jpg"
+              alt="enjoyable-place"
+            />
+          </picture>
 
-  Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from 
-  the comfort of our farmhouse.
+          <img
+            class="divider"
+            src="/images/patterns/pattern-divide.svg"
+            alt=""
+          />
+          <div class="section__text">
+            <h2 class="heading--L section--family__heading">
+              Enjoyable place for all the family
+            </h2>
+            <p class="body--1 section--family__body">
+              Our relaxed surroundings make dining with us a great experience
+              for everyone. We can even arrange a tour of the farm before your
+              meal.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section section--sourcing">
+        <div class="section__content">
+          <picture>
+            <source
+              media="(min-width: 900px)"
+              srcset="/images/homepage/locally-sourced-desktop.jpg"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="/images/homepage/locally-sourced-tablet.jpg"
+            />
+            <img
+              class="section--family__img box-shadow"
+              src="/images/homepage/locally-sourced-mobile.jpg"
+              alt="enjoyable-place"
+            />
+          </picture>
 
-  Book a table
+          <img
+            class="divider"
+            src="/images/patterns/pattern-divide.svg"
+            alt=""
+          />
+          <div class="section__text">
+            <h2 class="heading--L section--family__heading">
+              The most locally sourced food
+            </h2>
+            <p class="body--1 section--family__body">
+              All our ingredients come directly from our farm or local fishery.
+              So you can be sure that you’re eating the freshest, most
+              sustainable food.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section section--highlights">
+        <div class="section__content">
+          <img
+            class="divider"
+            src="/images/patterns/pattern-divide.svg"
+            alt=""
+          />
+          <div class="section__text">
+            <h2 class="heading--L section--highlights__heading">
+              A few highlights from our menu
+            </h2>
+            <p class="body--1 section--highlights__body">
+              We cater for all dietary requirements, but here’s a glimpse at
+              some of our diner’s favourites. Our menu is revamped every season.
+            </p>
+          </div>
+          <!-- Highlight Cards -->
+          <div class="highlight-wrapper">
+            <div class="card">
+              <picture>
+                <source
+                  media="(min-width: 375px)"
+                  srcset="/images/homepage/salmon-desktop-tablet.jpg"
+                />
+                <img
+                  class="card__img"
+                  src="/images/homepage/salmon-mobile.jpg"
+                  alt="salmon"
+                />
+              </picture>
 
+              <div class="card__content">
+                <h3 class="heading--M">Seared Salmon Fillet</h3>
+                <p class="body--1">
+                  Our locally sourced salmon served with a refreshing buckwheat
+                  summer salad.
+                </p>
+              </div>
+              <div class="divider--line"></div>
+            </div>
+            <div class="card">
+              <picture>
+                <source
+                  media="(min-width: 375px)"
+                  srcset="/images/homepage/beef-desktop-tablet.jpg"
+                />
+                <img
+                  class="card__img"
+                  src="/images/homepage/beef-mobile.jpg"
+                  alt="beef"
+                />
+              </picture>
+              <div class="card__content">
+                <h3 class="heading--M">Rosemary Filet Mignon</h3>
+                <p class="body--1">
+                  Our prime beef served to your taste with a delicious choice of
+                  seasonal sides.
+                </p>
+              </div>
+              <div class="divider--line"></div>
+            </div>
+            <div class="card">
+              <picture>
+                <source
+                  media="(min-width: 375px)"
+                  srcset="/images/homepage/chocolate-desktop-tablet.jpg"
+                />
+                <img
+                  class="card__img"
+                  src="/images/homepage/chocolate-mobile.jpg"
+                  alt="chocolate"
+                />
+              </picture>
+              <div class="card__content">
+                <h3 class="heading--M">Summer Fruit Chocolate Mousse</h3>
+                <p class="body--1">
+                  Creamy mousse combined with summer fruits and dark chocolate
+                  shavings.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--offers">
+        <div class="section__content">
+          <picture>
+            <source
+              media="(min-width: 900px)"
+              srcset="/images/homepage/family-gathering-desktop.jpg"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="/images/homepage/family-gathering-tablet.jpg"
+            />
+            <img
+              class="box-shadow"
+              src="/images/homepage/family-gathering-mobile.jpg"
+              alt="beef"
+            />
+          </picture>
 
+          <ul class="section--offers__list">
+            <li><h4 class="heading--S">Family Gathering</h4></li>
+            <li><h4 class="heading--S">Special Events</h4></li>
+            <li><h4 class="heading--S">Social Events</h4></li>
+          </ul>
+          <div class="section--offers__text section__text">
+            <h2 class="heading--L">Family Gathering</h2>
+            <p class="body--1">
+              We love catering for entire families. So please bring everyone
+              along for a special meal with your loved ones. We’ll provide a
+              memorable experience for all.
+            </p>
+            <button class="btn btn--white">book a table</button>
+          </div>
+        </div>
+      </section>
+      <section class="call-to-action">
+        <div class="call-to-action__bg-container">
+          <picture>
+            <source
+              media="(min-width: 900px)"
+              srcset="/images/homepage/ready-bg-desktop.jpg"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="/images/homepage/ready-bg-tablet.jpg"
+            />
+            <img
+              class="call-to-action__bg-img Absolute-Center"
+              src="/images/homepage/ready-bg-mobile.jpg"
+              alt="call to action background image"
+            />
+          </picture>
+        </div>
+        <div class="section__content">
+          <h2 class="heading--L">Ready to make a reservation?</h2>
+          <button class="btn btn--dark">book a table</button>
+        </div>
+      </section>
 
-  Enjoyable place for all the family
-
-  Our relaxed surroundings make dining with us a great experience for everyone. We can even arrange 
-  a tour of the farm before your meal.
-
-  The most locally sourced food
-
-  All our ingredients come directly from our farm or local fishery. So you can be sure that you’re 
-  eating the freshest, most sustainable food.
-
-
-
-  A few highlights from our menu
-
-  We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites. 
-  Our menu is revamped every season.
-
-  Seared Salmon Fillet
-  Our locally sourced salmon served with a refreshing buckwheat summer salad.
-
-  Rosemary Filet Mignon
-  Our prime beef served to your taste with a delicious choice of seasonal sides.
-
-  Summer Fruit Chocolate Mousse
-  Creamy mousse combined with summer fruits and dark chocolate shavings.
-
-
-
-  Family Gathering
-  Special Events
-  Social Events
-
-  Family Gathering
-  We love catering for entire families. So please bring everyone along for a special meal with your 
-  loved ones. We’ll provide a memorable experience for all.
-
+      <footer class="footer">
+        <div class="section__content">
+          <img class="hero__logo" src="/images/logo.svg" alt="dine" />
+          <div class="footer__details">
+            <div class="footer__details-group">
+              <h6 class="footer-text">Marthwaite, Sedbergh</h6>
+              <h6 class="footer-text">Cumbria</h6>
+              <h6 class="footer-text">+00 44 123 4567</h6>
+            </div>
+            <div class="footer__details-group">
+              <h6 class="footer-text">Open Times</h6>
+              <h6 class="footer-text">Mon - Fri: 09:00 AM - 10:00 PM</h6>
+              <h6 class="footer-text">Sat - Sun: 09:00 AM - 11:30 PM</h6>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- <h1 class="heading--XL">Jived Fox</h1>
+      <h1 class="heading--L">Jived fox nymph grabs quick waltz</h1>
+      <h1 class="heading--M">Jived fox nymph grabs quick waltz</h1>
+      <h1 class="heading--S">Jived fox nymph grabs quick waltz</h1>
+      <p class="body--1">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
+        hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet
+        vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
+        laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
+        nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+      </p>
+      <p class="body--2">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus
+        hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet
+        vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin
+        laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu
+        nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+      </p> -->
+    </main>
+    <!--
   Special Events
   Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. 
   We’ll be sure to mark your special date with an unforgettable meal.
@@ -63,23 +305,9 @@
   Are you looking to have a larger social event? No problem! We’re more than happy to cater for big 
   parties. We’ll work with you to make your event a hit with everyone.
 
-  Book a table
 
 
 
-  Ready to make a reservation?
-
-  Book a table
-
-
-
-  Marthwaite, Sedbergh
-  Cumbria
-  +00 44 123 4567
-
-  Open Times
-  Mon - Fri: 09:00 AM - 10:00 PM
-  Sat - Sun: 09:00 AM - 11:30 PM
-
-</body>
+-->
+  </body>
 </html>

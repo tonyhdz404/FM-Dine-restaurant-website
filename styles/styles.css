@@ -1,0 +1,384 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Primaries */
+  --Bronze: #9e7f66;
+  --Black: #111111;
+  /* Secoundaries */
+  --Gray-1: #17192b;
+  --Gray-2: #242b37;
+  --Gray-3: #5c6779;
+  --Font: "League Spartan", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: var(--Font);
+}
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+.box-shadow {
+  box-shadow: 0 80px 91px -59px grey;
+}
+/* Typography */
+/* 
+Light 300
+Regular 400
+SemiBold 600
+Bold 700
+ */
+.container {
+  width: 100%;
+  max-width: 100%;
+}
+.heading--XL {
+  /* Done */
+  font-size: 3.2rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+.heading--L {
+  /* Done */
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+.heading--M {
+  font-size: 2rem;
+  font-weight: 700;
+  /* letter-spacing: -0.25px; */
+}
+.heading--S {
+  /* Done */
+  color: #4c4c4c;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+.body--1 {
+  /* Done */
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+.body--2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.6rem;
+}
+/* Buttons */
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  background-color: transparent;
+  padding: 2.5rem 4.8rem;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.btn--white {
+  color: white;
+  background-color: var(--Black);
+}
+.btn--dark {
+  color: white;
+  border: 1.5px solid white;
+}
+.btn--dark:hover {
+  color: var(--Gray-1);
+  background-color: white;
+}
+/* General Section */
+.section {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 37.5rem;
+}
+.section__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 32.7rem;
+}
+/* Hero */
+.section--hero {
+  position: relative;
+  background-color: var(--Black);
+  color: white;
+  min-height: 74.8rem;
+  padding-top: 23.2rem;
+  padding-bottom: 15.2rem;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  z-index: 1;
+}
+.hero__logo {
+  margin-bottom: 3.6rem;
+}
+.hero__heading {
+  margin-bottom: 2.1rem;
+}
+.hero__body {
+  margin-bottom: 5.3rem;
+}
+
+/* Family/Sourcing */
+.section--sourcing,
+.section--family,
+.section--offers {
+  background-color: white;
+}
+.section--family {
+  margin-top: -6rem;
+  padding-bottom: 10rem;
+}
+.section--family__img {
+  margin-bottom: 4.8rem;
+}
+.divider {
+  margin-bottom: 3.6rem;
+}
+.section--family h2,
+.section--sourcing h2,
+.section--highlights h2,
+.section--offers h2 {
+  margin-bottom: 1.3rem;
+}
+.section--sourcing {
+  padding-bottom: 10.2rem;
+}
+
+/* Highlights */
+.section--highlights {
+  background-color: var(--Black);
+  padding-top: 7.2rem;
+  padding-bottom: 10.2rem;
+  color: white;
+}
+.highlight-wrapper {
+  margin-top: 8.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+/* Offers */
+.section--offers {
+  padding: 8rem 0 12.4rem 0;
+}
+.section--offers__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  margin-top: 4.9rem;
+  margin-bottom: 2.6rem;
+}
+.section--offers__list li {
+  cursor: pointer;
+}
+.section--offers .btn--white {
+  margin-top: 2.7rem;
+}
+/*Call to action */
+.call-to-action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 32.8rem;
+  color: white;
+}
+.call-to-action h2 {
+  margin-bottom: 2rem;
+}
+.Absolute-Center {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.call-to-action__bg-img {
+  z-index: 0;
+
+  height: 100%;
+  object-fit: cover;
+}
+/*TODO  Footer */
+.footer {
+  background-color: var(--Black);
+  color: white;
+  padding: 8rem 0;
+}
+.footer__details {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.footer__details-group h6:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.footer-text {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+/* Card */
+.card {
+}
+.card h3 {
+  margin-bottom: 8px;
+}
+.card__img {
+  max-width: 100%;
+  margin-bottom: 3.6rem;
+}
+.divider--line {
+  margin-top: 5.6rem;
+  background-color: var(--Gray-2);
+  height: 1px;
+  width: 100%;
+}
+
+/* Tablet Media Queries */
+@media only screen and (min-width: 375px) {
+  body {
+    background-color: lightblue;
+  }
+  .section {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 76.8rem;
+  }
+  .section__content {
+    max-width: 68.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section__text {
+    width: 100%;
+    max-width: 45.7rem;
+  }
+  .section--hero {
+    position: relative;
+    background-color: var(--Black);
+    color: white;
+    min-height: 99.2rem;
+    padding-top: 37.4rem;
+    padding-bottom: 21.6rem;
+  }
+  .heading--XL {
+    font-size: 4.8rem;
+  }
+  .body--1 {
+    font-size: 2rem;
+    line-height: 2.6rem;
+  }
+  /* Card */
+  .card {
+    display: grid;
+    grid-template-columns: 16rem 1fr;
+    grid-template-rows: 9.6rem;
+  }
+  .card__content {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .divider--line {
+    grid-column: span 2;
+  }
+
+  .section--offers__text {
+    margin-top: 4.7rem;
+  }
+  .section--offers p {
+    margin-bottom: 6rem;
+  }
+  .section--offers__list {
+    flex-direction: row;
+    width: 100%;
+    gap: 0;
+    justify-content: space-between;
+  }
+  .call-to-action__bg-container {
+    height: 27.2rem;
+  }
+  .footer {
+    padding: 6.8rem 0;
+  }
+  .footer .hero__logo {
+    margin-right: 13rem;
+  }
+  .footer .section__content {
+    flex-direction: row;
+  }
+
+  .footer__details-group h6:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+  .footer__details-group {
+    text-align: left;
+  }
+}
+/* Desktop Media Queries */
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+  .heading--XL {
+    font-size: 8rem;
+    font-weight: 300;
+    letter-spacing: -1px;
+  }
+  .heading--L {
+    font-size: 4.8rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+  .heading--M {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+  }
+  .heading--S {
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+  }
+  .body--1 {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 3rem;
+  }
+  .body--2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.6rem;
+  }
+}
